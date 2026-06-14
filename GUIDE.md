@@ -23,7 +23,7 @@
 13. [Environment setup](#13-environment-setup)
 14. [How to read this codebase](#14-how-to-read-this-codebase)
 15. [Evaluation](#15-evaluation)
-16. [Safety, ethics, disclaimers](#16-safety-ethics-disclaimers)
+16. [Safety & quality guardrails](#16-safety-ethics-disclaimers)
 17. [Git workflow](#17-git-workflow)
 18. [Common pitfalls](#18-common-pitfalls)
 19. [Stretch goals](#19-stretch-goals)
