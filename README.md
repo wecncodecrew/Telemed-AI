@@ -1,5 +1,5 @@
 # Telemed Chatbot
-
+# Read 2026-06-13 — understand: 100%, issue: "python -m backend.scripts.ingest" fails, solution: TBA
 A symptom chatbot built with **GraphRAG** on **MedlinePlus** health topics.
 Describe symptoms → hybrid retrieval (knowledge graph + vector search) → local LLM via Ollama → possible conditions, typical care, red flags, sources.
 

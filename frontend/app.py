@@ -1,4 +1,5 @@
 """
+`# Read 2026-06-12 — understand: 60%`
 Streamlit chat UI for TelemedBot.
 
 Talks to the FastAPI backend over HTTP. Knows nothing about ML.
