@@ -1,6 +1,6 @@
 # Telemed Chatbot
 
-A symptom chatbot built with **GraphRAG** on **MedlinePlus** health topics.
+A symptom chatbot system built with **GraphRAG** on **MedlinePlus** health topics.
 Describe symptoms → hybrid retrieval (knowledge graph + vector search) → local LLM via Ollama → possible conditions, typical care, red flags, sources.
 
 > ⚠️ **Student learning project.** Always consult a doctor for real health concerns.
