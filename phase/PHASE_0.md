@@ -483,8 +483,8 @@ Decide on roles based on `GUIDE.md` §12. *Owning* a part of the system means be
 | Data engineer | _________ |
 | Graph engineer | _________ |
 | Retrieval / LLM engineer | _________ |
-| Backend engineer | Tariq (2nd choice) |
-| Frontend engineer | Tariq (1st choice) |
+| Backend engineer | _________ |
+| Frontend engineer | _________ |
 | Evaluation lead (rotated) | _________ |
 
 Fill the table in and pin it to the team's chat channel.
