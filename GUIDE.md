@@ -1,4 +1,4 @@
-# Telemed Chatbot —  Guide
+# Telemed Chatbot — Guide
 
 > A 3-month open-source MVP for ML beginners.
 > A symptom-triage chatbot built with **GraphRAG** — combining a **knowledge graph** of medical concepts with **vector search** — grounded on the **MedlinePlus** corpus.
