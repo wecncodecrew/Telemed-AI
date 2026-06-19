@@ -1,5 +1,5 @@
 """FastAPI entrypoint. Run with: uvicorn backend.app.main:app --reload --port 8000"""
-# Read 2026-06-12 — understand: 70%
+# Read 2026-06-15 — understand: 75%
 from __future__ import annotations
 from contextlib import asynccontextmanager
 from fastapi import FastAPI

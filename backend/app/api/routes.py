@@ -1,5 +1,5 @@
 """HTTP routes. Keep these thin — call into services/ for real work."""
-# Read 2026-06-08 — understand: 80%
+# Read 2026-06-15 — understand: 65%
 from __future__ import annotations
 from fastapi import APIRouter, HTTPException
 

@@ -1,11 +1,11 @@
 """
-`# Read 2026-06-12 — understand: 70%`
 All prompts in one place. Iterate here — small wording changes move quality a lot.
 
 Two prompts:
   1. EXTRACTION_PROMPT  — used at ingestion AND at query time to pull entities/relations.
   2. TRIAGE_PROMPT      — used at query time to write the final answer.
 """
+# Read 2026-06-16 — understand: 50%
 from langchain_core.prompts import ChatPromptTemplate
 
 

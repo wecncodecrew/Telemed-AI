@@ -5,6 +5,7 @@ Every chunk gets a stable `chunk_id` so we can:
   - look it up later from Chroma by id, and
   - reference it from graph nodes (a node "knows" which chunks mention it).
 """
+# Read 2026-06-18 — understand: 50%
 from __future__ import annotations
 import hashlib
 from typing import Iterable

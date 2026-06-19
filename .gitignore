@@ -10,6 +10,7 @@ __pycache__/
 .streamlit/secrets.toml
 .DS_Store
 .pytest_cache/
+data/chroma/
 .vscode/
 .idea/
 .claude/

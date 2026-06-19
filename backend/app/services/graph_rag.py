@@ -7,7 +7,7 @@ answer(question) -> {
     "entities": [str, ...]   # graph entities matched in the question
 }
 """
-# Read 2026-06-12 — understand: 20%
+# Read 2026-06-17 — understand: 25%
 from __future__ import annotations
 from typing import TypedDict
 
