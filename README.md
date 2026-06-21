@@ -75,3 +75,7 @@ See [GUIDE.md §7](./GUIDE.md#7-system-architecture) for the full mermaid diagra
 ## Contributing
 
 Open-source learning project. PRs welcome — open an issue first, branch off `main`, request a review.
+
+## Contributors
+
+- Joan Ouma
