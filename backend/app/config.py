@@ -1,3 +1,4 @@
+# I read this on 2026-06-21 and understand it.
 """Central configuration. Import this — never hard-code settings elsewhere."""
 from __future__ import annotations
 import os

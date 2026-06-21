@@ -1,3 +1,4 @@
+# I read this on 2026-06-21 and understand it.
 """
 All prompts in one place. Iterate here — small wording changes move quality a lot.
 

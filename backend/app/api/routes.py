@@ -1,3 +1,4 @@
+# I read this on 2026-06-21 and understand it.
 """HTTP routes. Keep these thin — call into services/ for real work."""
 from __future__ import annotations
 from fastapi import APIRouter, HTTPException

@@ -1,3 +1,4 @@
+# I read this on 2026-06-21 and understand it.
 """FastAPI entrypoint. Run with: uvicorn backend.app.main:app --reload --port 8000"""
 from __future__ import annotations
 from contextlib import asynccontextmanager

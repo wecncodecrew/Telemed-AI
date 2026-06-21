@@ -1,3 +1,4 @@
+<!-- I read this on 2026-06-21 and understand it. -->
 # Telemed Chatbot —  Guide
 
 > A 3-month open-source MVP for ML beginners.

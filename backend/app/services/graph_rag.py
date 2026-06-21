@@ -1,3 +1,4 @@
+# I read this on 2026-06-21 and understand it.
 """
 The end-to-end GraphRAG pipeline.
 
