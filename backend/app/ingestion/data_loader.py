@@ -209,6 +209,7 @@ def build_clean_jsonl() -> Path:
     print(f"Parsing {xml_path.name} ...")
 
     count = 0
+    skipped = 0
     # `with open(...)` ensures the file is closed automatically when we're done,
     # even if an error happens mid-loop.
     with CLEAN_JSONL.open("w", encoding="utf-8") as f:
@@ -218,10 +219,15 @@ def build_clean_jsonl() -> Path:
         for rec in tqdm(iter_topics(xml_path), unit="topics"):
             # json.dumps turns the Python dict into a JSON string.
             # We append "\n" so each record sits on its own line.
+            if not rec.get("text"):
+                skipped += 1
+                continue
             f.write(json.dumps(rec, ensure_ascii=False) + "\n")
             count += 1
 
     print(f"Wrote {count} topics to {CLEAN_JSONL}")
+    if skipped:
+        print(f"  (skipped {skipped} topics with empty text)")
     return CLEAN_JSONL
 
 
