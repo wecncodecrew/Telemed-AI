@@ -29,6 +29,10 @@ def main() -> None:
     print("Step 1/4: loading clean MedlinePlus records ...")
     records = load_records()
     print(f"  loaded {len(records)} topics")
+    if not records:
+        print("  ⚠  No records found — the MedlinePlus XML may be empty or missing.")
+        print("  Fallback will be used at query time.")
+        return
 
     print("Step 2/4: chunking ...")
     docs = records_to_documents(records)
