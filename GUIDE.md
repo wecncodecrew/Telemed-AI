@@ -217,7 +217,7 @@ flowchart TB
     EMB --> L2
 ```
 
-Two independent processes:
+Three independent processes:
 1. **Backend** runs on `http://localhost:8000` (FastAPI / Uvicorn).
 2. **Frontend** runs on `http://localhost:8501` (Streamlit).
 3. **Ollama** runs on `http://localhost:11434` and is shared.

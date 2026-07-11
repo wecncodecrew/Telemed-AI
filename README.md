@@ -9,32 +9,44 @@ Describe symptoms → hybrid retrieval (knowledge graph + vector search) → loc
 
 ## Quickstart
 
+### 1. Model & Data Setup
+
+Install [Ollama](https://ollama.com/) and pull the necessary local models:
+
 ```bash
-# 1. Install Ollama (https://ollama.com/) and pull models
 ollama pull llama3.1:8b
 ollama pull nomic-embed-text
+```
 
-# 2. Download MedlinePlus XML (https://medlineplus.gov/xml.html)
-#    Place it in data/raw/
+Download the [MedlinePlus XML dataset](https://medlineplus.gov/xml.html) and place it in the `data/raw/` directory.
 
-# 3. Backend
+### 2. Backend Initialization (FastAPI)
+
+```bash
 cd backend
 python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 cp .env.example .env
 
-# 4. Build the knowledge base (one-time, takes a while)
+# Build the knowledge base (one-time, takes a while)
 cd ..
 python -m backend.scripts.ingest
 
-# 5. Start the backend
+# Start the backend API
 uvicorn backend.app.main:app --reload --port 8000
+```
 
-# 6. In a NEW terminal — frontend
+### 3. Frontend Initialization (Streamlit)
+
+Open a **NEW terminal window**:
+
+```bash
 cd frontend
-python -m venv .venv && source .venv/bin/activate
+python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 cp .env.example .env
+
+# Start the interface
 streamlit run app.py
 ```
 
