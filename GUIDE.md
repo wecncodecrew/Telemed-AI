@@ -427,7 +427,7 @@ flowchart LR
 
 **Deliverable:** Clean JSONL + EDA notebook.
 
-**DoD:** Running `python backend/scripts/ingest.py --step data` produces a non-empty JSONL.
+**DoD:** Running `python -m backend.scripts.ingest --limit 50` produces a non-empty JSONL.
 
 ---
 
