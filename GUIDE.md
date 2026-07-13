@@ -581,10 +581,13 @@ Everyone reviews everyone's PRs. No direct pushes to `main`.
 
 ### 13.1 System requirements
 
-- **OS:** Windows 10/11, macOS, or Linux.
-- **RAM:** 16 GB recommended (8 GB minimum, use `phi3:mini` instead).
-- **Disk:** 10 GB free (the models are ~5 GB).
-- **Python:** 3.10 or 3.11.
+* **OS:** Windows 10/11, macOS, or Linux.
+* **RAM:** 16 GB recommended (8 GB minimum, use `phi3:mini` instead).
+* **Disk:** 10 GB free (the models are ~5 GB).
+* **Python:** 3.10, 3.11, or 3.12.
+
+> **Note:** Python 3.12 has been tested successfully with this project. Ubuntu 24.04 LTS users can use the default Python 3.12 installation without requiring an older Python version.
+
 
 ### 13.2 Install Ollama
 
