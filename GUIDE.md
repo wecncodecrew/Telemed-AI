@@ -23,18 +23,25 @@
 13. [Environment setup](#13-environment-setup)
 14. [How to read this codebase](#14-how-to-read-this-codebase)
 15. [Evaluation](#15-evaluation)
-16. [Safety, ethics, disclaimers](#16-safety-ethics-disclaimers)
-17. [Git workflow](#17-git-workflow)
-18. [Common pitfalls](#18-common-pitfalls)
-19. [Stretch goals](#19-stretch-goals)
-20. [How to get unstuck](#20-how-to-get-unstuck)
-21. [FAQ](#21-faq)
-22. [Resources](#22-resources)
-23. [Glossary](#23-glossary)
+16. [Safety & quality guardrails](#16-safety--quality-guardrails)
+18. [Git workflow](#17-git-workflow)
+19. [Common pitfalls](#18-common-pitfalls)
+20. [Stretch goals](#19-stretch-goals)
+21. [How to get unstuck](#20-how-to-get-unstuck)
+22. [FAQ](#21-faq)
+23. [Resources](#22-resources)
+24. [Glossary](#23-glossary)
+
+---
+
+## Quick Start
+
+...your new quick start section...
 
 ---
 
 ## 1. Read this first
+---
 
 You are about to build a real AI system, end to end. You will touch data parsing, language-model prompting, vector search, knowledge graphs, an HTTP backend, and a chat UI. Don't be intimidated — every piece is small. Each phase in [section 11](#11-project-phases-the-3-month-plan) is a self-contained step with a clear "done" definition.
 
@@ -612,7 +619,22 @@ python -m venv .venv
 # Windows:  .venv\Scripts\activate
 # *nix:     source .venv/bin/activate
 pip install -r requirements.txt
+Linux/macOS:
+
+```bash
 cp .env.example .env
+```
+
+Windows Command Prompt:
+
+```cmd
+copy .env.example .env
+```
+
+Windows PowerShell:
+
+```powershell
+Copy-Item .env.example .env
 ```
 
 **Terminal B — frontend:**
@@ -622,7 +644,22 @@ python -m venv .venv
 # Windows:  .venv\Scripts\activate
 # *nix:     source .venv/bin/activate
 pip install -r requirements.txt
+Linux/macOS:
+
+```bash
 cp .env.example .env
+```
+
+Windows Command Prompt:
+
+```cmd
+copy .env.example .env
+```
+
+Windows PowerShell:
+
+```powershell
+Copy-Item .env.example .env
 ```
 
 ### 13.4 Get the data
@@ -789,7 +826,7 @@ A staircase, try in order:
 7. **Ask in the team chat** with: what you tried, the exact error, what you expected, what happened.
 8. **Ask the mentor.**
 
-Never sit silent and stuck for more than 30 minutes.
+Never stay stuck for more than 30 minutes without asking for help.
 
 ---
 
