@@ -1,4 +1,4 @@
-# Telemed Chatbot —  Guide
+# Telemed Chatbot — Guide
 
 > A 3-month open-source MVP for ML beginners.
 > A symptom-triage chatbot built with **GraphRAG** — combining a **knowledge graph** of medical concepts with **vector search** — grounded on the **MedlinePlus** corpus.
@@ -23,7 +23,7 @@
 13. [Environment setup](#13-environment-setup)
 14. [How to read this codebase](#14-how-to-read-this-codebase)
 15. [Evaluation](#15-evaluation)
-16. [Safety, ethics, disclaimers](#16-safety-ethics-disclaimers)
+16. [Safety & quality guardrails](#16-safety--quality-guardrails)
 17. [Git workflow](#17-git-workflow)
 18. [Common pitfalls](#18-common-pitfalls)
 19. [Stretch goals](#19-stretch-goals)
@@ -217,7 +217,7 @@ flowchart TB
     EMB --> L2
 ```
 
-Two independent processes:
+Three independent processes:
 1. **Backend** runs on `http://localhost:8000` (FastAPI / Uvicorn).
 2. **Frontend** runs on `http://localhost:8501` (Streamlit).
 3. **Ollama** runs on `http://localhost:11434` and is shared.
@@ -427,7 +427,7 @@ flowchart LR
 
 **Deliverable:** Clean JSONL + EDA notebook.
 
-**DoD:** Running `python backend/scripts/ingest.py --step data` produces a non-empty JSONL.
+**DoD:** Running `python -m backend.scripts.ingest --limit 50` produces a non-empty JSONL.
 
 ---
 

@@ -1,12 +1,16 @@
 # 🩺 Telemed Chatbot (Wecncode Open Source)
 
-A privacy-focused, local-first symptom chatbot built with GraphRAG on MedlinePlus health topics. 
+
+A symptom chatbot built with **GraphRAG** on **MedlinePlus** health topics.
+Describe symptoms => hybrid retrieval (knowledge graph + vector search) → local LLM via Ollama → possible conditions, typical care, red flags, sources.
+
 
 The system utilizes hybrid retrieval (combining knowledge graphs with vector search) and routes data through local LLMs via Ollama to provide potential conditions, typical care instructions, red flags, and verified sources. 
 
 > **⚠️ Disclaimer:** This is an open-source educational project. It is not a substitute for professional medical advice. Always consult a doctor for real health concerns.
 
 📖 **Read [GUIDE.md](./GUIDE.md) first.** It is your comprehensive e-guide for the project, detailing core concepts, architecture, phased plans, and mermaid diagrams.
+
 
 ---
 
@@ -20,6 +24,48 @@ We are building this project under the Wecncode community guidelines. Our develo
 ---
 
 ## 🏗️ Architecture Layout
+
+### 1. Model & Data Setup
+
+Install [Ollama](https://ollama.com/) and pull the necessary local models:
+
+```bash
+ollama pull llama3.1:8b
+ollama pull nomic-embed-text
+```
+
+Download the [MedlinePlus XML dataset](https://medlineplus.gov/xml.html) and place it in the `data/raw/` directory.
+
+### 2. Backend Initialization (FastAPI)
+
+```bash
+cd backend
+python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+cp .env.example .env
+
+# Build the knowledge base (one-time, takes a while)
+cd ..
+python -m backend.scripts.ingest
+
+# Start the backend API
+uvicorn backend.app.main:app --reload --port 8000
+```
+
+### 3. Frontend Initialization (Streamlit)
+
+Open a **NEW terminal window**:
+
+```bash
+cd frontend
+python -m venv .venv && source .venv/bin/activate   # Windows: .venv\Scripts\activate
+pip install -r requirements.txt
+cp .env.example .env
+
+# Start the interface
+streamlit run app.py
+```
+
 
 The project features a decoupled architecture separating the AI/Data engine from the user interface. 
 
