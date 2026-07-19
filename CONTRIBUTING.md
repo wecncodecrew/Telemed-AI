@@ -23,11 +23,6 @@ flowchart TD
 ```
 
 Everything below is detail on each step. If you only remember the diagram, you'll be fine.
-
-> **Mentor:** `@<mentor-github-handle>` — *tag* (write `@username` on GitHub to notify someone) on every PR for final review.
-> **Repo** *(repository — the project folder tracked by git on GitHub)***:** `<repo-url-placeholder>`
-> **Team chat:** WhatsApp group (ask the mentor for the invite).
-
 ---
 
 ## Table of contents
