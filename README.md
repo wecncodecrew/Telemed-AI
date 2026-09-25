@@ -1,11 +1,11 @@
-# Telemed Chatbot (Wecncode Open Source)
+# Telemed Chatbot
 
 A symptom chatbot built with **GraphRAG** on **MedlinePlus** health topics.
 Describe symptoms => hybrid retrieval (knowledge graph + vector search) → local LLM via Ollama → possible conditions, typical care, red flags, sources.
 
 The system utilizes hybrid retrieval (combining knowledge graphs with vector search) and routes data through local LLMs via Ollama to provide potential conditions, typical care instructions, red flags, and verified sources. 
 
-> **⚠️ Disclaimer:** This is an open-source educational project. It is not a substitute for professional medical advice. Always consult a doctor for real health concerns.
+> **Disclaimer:** This is an open-source educational project. It is not a substitute for professional medical advice. Always consult a doctor for real health concerns.
 
 **Read [GUIDE.md](./GUIDE.md) first.** It is your comprehensive e-guide for the project, detailing core concepts, architecture, phased plans, and mermaid diagrams.
 
