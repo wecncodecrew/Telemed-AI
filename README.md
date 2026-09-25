@@ -1,20 +1,17 @@
-# 🩺 Telemed Chatbot (Wecncode Open Source)
-
+# Telemed Chatbot (Wecncode Open Source)
 
 A symptom chatbot built with **GraphRAG** on **MedlinePlus** health topics.
 Describe symptoms => hybrid retrieval (knowledge graph + vector search) → local LLM via Ollama → possible conditions, typical care, red flags, sources.
-
 
 The system utilizes hybrid retrieval (combining knowledge graphs with vector search) and routes data through local LLMs via Ollama to provide potential conditions, typical care instructions, red flags, and verified sources. 
 
 > **⚠️ Disclaimer:** This is an open-source educational project. It is not a substitute for professional medical advice. Always consult a doctor for real health concerns.
 
-📖 **Read [GUIDE.md](./GUIDE.md) first.** It is your comprehensive e-guide for the project, detailing core concepts, architecture, phased plans, and mermaid diagrams.
-
+**Read [GUIDE.md](./GUIDE.md) first.** It is your comprehensive e-guide for the project, detailing core concepts, architecture, phased plans, and mermaid diagrams.
 
 ---
 
-## 🌟 The Developer Ethos
+## The Developer Ethos
 We are building this project under the Wecncode community guidelines. Our development philosophy is:
 * **Local First:** Zero cloud API keys. Everything runs securely on your machine.
 * **Tech Stack Agnostic:** A decoupled architecture means you can use the backend API to build frontends in React, Vue, Vanilla JS, or whatever you prefer.
@@ -23,7 +20,7 @@ We are building this project under the Wecncode community guidelines. Our develo
 
 ---
 
-## 🏗️ Architecture Layout
+## Architecture Layout
 
 ### 1. Model & Data Setup
 
@@ -103,7 +100,7 @@ For the complete network traversal and data-flow mermaid diagram, see [GUIDE.md 
 
 ---
 
-## 🚀 Quickstart Guide
+## Quickstart Guide
 
 ### 1. Model & Data Setup
 Install [Ollama](https://ollama.com/) and pull the necessary local models:
@@ -144,7 +141,7 @@ Access the interface at <http://localhost:8501>.
 
 ---
 
-## 🤝 Contributing & The Task Matrix
+## Contributing & The Task Matrix
 
 This is an open-source learning project. We welcome PRs from developers of all skill levels. Please open an issue first, branch off `main`, and request a review.
 
@@ -152,8 +149,9 @@ Looking for a place to start? Check our active Task Matrix:
 
 | Category | Domain Modules | Frontend UI | Quality & Safety |
 | :--- | :--- | :--- | :--- |
-| 🌱 **Beginner** (No ML needed) | Collect symptom datasets. Add crisis links. | Design chat UI wireframes. | Add mandatory medical disclaimers. |
-| 🛠️ **Intermediate** (API/React/RAG) | Build diet & nutrition RAG pipelines. | Connect custom frontends to the API. | Write backend unit tests. Add input sanitization. |
-| 🚀 **Advanced** (Strong Coding) | Implement mental health safety filters. | Build multi-turn contextual memory interfaces. | Build harmful query filters and integration tests. |
+| **Beginner** (No ML needed) | Collect symptom datasets. Add crisis links. | Design chat UI wireframes. | Add mandatory medical disclaimers. |
+| **Intermediate** (API/React/RAG) | Build diet & nutrition RAG pipelines. | Connect custom frontends to the API. | Write backend unit tests. Add input sanitization. |
+| **Advanced** (Strong Coding) | Implement mental health safety filters. | Build multi-turn contextual memory interfaces. | Build harmful query filters and integration tests. |
 
-**Profiles:** Beginners focus on documentation and basic UI. Intermediates tackle pipelines and frontend components. Advanced builders focus on integration testing and complex memory.
+_🩶 Developed by Wecncode Developer Community!_
+
