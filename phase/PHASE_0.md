@@ -122,7 +122,7 @@ Most distros ship Python. Verify the version is 3.10+:
 python3 --version
 ```
 
-Any version starting with `3.10`, `3.11`, or `3.12` is acceptable. `3.8` and `3.9` are too old; upgrade.
+Any version starting with `3.10`, or `3.11` is acceptable. `3.8` and `3.9` are too old; upgrade.
 
 ### 5.2 Git
 
