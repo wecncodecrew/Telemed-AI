@@ -5,6 +5,7 @@ Talks to the FastAPI backend over HTTP. Knows nothing about ML.
 
 Run with:   streamlit run frontend/app.py
 """
+# Read 2026-06-18 — understand: 75%
 from __future__ import annotations
 import os
 

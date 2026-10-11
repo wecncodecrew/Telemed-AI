@@ -1,4 +1,5 @@
 """Central configuration. Import this — never hard-code settings elsewhere."""
+# Read 2026-06-08 — understand: 65%
 from __future__ import annotations
 import os
 from pathlib import Path

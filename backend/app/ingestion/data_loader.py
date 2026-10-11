@@ -1,3 +1,4 @@
+# Read 2026-06-18 — understand: 50%
 """
 data_loader.py — Phase 1, Step 1 of the ingestion pipeline.
 

@@ -5,7 +5,7 @@
 > **Backend:** FastAPI · **Frontend:** Streamlit · **LLM runtime:** Ollama (local) · **Graph:** NetworkX · **Vectors:** Chroma
 
 ---
-
+# Read 2026-06-18 — understand: 85%
 ## Table of Contents
 
 1. [Read this first](#1-read-this-first)

@@ -7,6 +7,7 @@ This is the slowest step of ingestion (~1 LLM call per chunk). Expect
 
 To iterate fast while developing, pass `limit=50` and inspect the result.
 """
+# Read 2026-06-18 — understand: 50%
 from __future__ import annotations
 import networkx as nx
 from langchain_core.documents import Document

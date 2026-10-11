@@ -1,4 +1,5 @@
 """Chat LLM wrapper. Single source of truth for which chat model we use."""
+# Read 2026-06-16 — understand: 100%
 from langchain_ollama import ChatOllama
 
 from backend.app.config import LLM_MODEL, OLLAMA_BASE_URL

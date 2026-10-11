@@ -4,6 +4,7 @@ Hybrid retriever: combines knowledge-graph hits with vector similarity hits.
 Returns deduplicated Documents ordered roughly by relevance: graph hits first
 (usually more precise for symptom→condition reasoning), then vector hits.
 """
+# Read 2026-06-17 — understand: 25%
 from __future__ import annotations
 from dataclasses import dataclass
 
