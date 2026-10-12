@@ -49,6 +49,16 @@ def answer(question: str) -> RagResult:
     retriever = get_retriever()
     result = retriever.retrieve(question)
 
+    # Fallback: if no relevant documents found, return early instead of
+    # asking the LLM to guess from an empty context.
+    if not result.docs:
+        return {
+            "answer": "No official MedlinePlus documentation found for this entity.",
+            "sources": [],
+            "entities": result.matched_entities,
+            "candidate_conditions": result.candidate_conditions,
+        }
+
     prompt = get_triage_prompt()
     llm = get_llm(temperature=0.2)
     chain = prompt | llm | StrOutputParser()
